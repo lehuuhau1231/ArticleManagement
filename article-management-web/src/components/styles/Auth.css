@@ -1,0 +1,87 @@
+/* Auth component fixes for Bootstrap conflicts */
+
+/* Ensure container works properly */
+.auth-container.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fix card body padding */
+.auth-card .card-body {
+  padding: 2.5rem !important;
+}
+
+/* Ensure proper spacing */
+.auth-container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.auth-container .col-md-6,
+.auth-container .col-lg-5,
+.auth-container .col-md-7,
+.auth-container .col-lg-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fix button styling conflicts */
+.auth-card .btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+
+.auth-card .btn-primary:hover {
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+}
+
+/* Fix form control styling */
+.auth-card .form-control {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+}
+
+.auth-card .form-control:focus {
+  background-color: #fff;
+  outline: 0;
+}
+
+/* Fix alert styling */
+.auth-card .alert {
+  position: relative;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+}
+
+/* Progress bar fixes */
+.auth-card .progress {
+  background-color: #e9ecef;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+/* Text and link fixes */
+.auth-card .text-primary {
+  color: #0d6efd !important;
+}
+
+.auth-card .text-muted {
+  color: #6c757d !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 576px) {
+  .auth-card .card-body {
+    padding: 1.5rem !important;
+  }
+
+  .auth-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
