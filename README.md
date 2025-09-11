@@ -57,15 +57,15 @@ spring:
 
 **Các thông số cần cấu hình:**
 
-- **url**: Giữ nguyên `jdbc:mysql://localhost:3306/articledb` (articledb là tên database đã tạo ở bước trước)
+- **url**: Giữ nguyên `jdbc:mysql://localhost:3306/articledb`
 - **username**: Thay bằng username MySQL của Anh/ Chị (thường là `root`)
 - **password**: Thay bằng password MySQL của Anh/ Chị
 
 #### Bước 3: Tạo database articledb và khởi tạo dữ liệu
 
-- Bước 1: vào mySQL -> vào Server -> chọn Data Import
-  ![alt text](image.png)
-- Bước 2: chọn Import from Self-Contained File -> chọn vào file data.sql ở thư mực ArticleManagement -> tạo schema articledb -> start import
+- Bước 1: Vào mySQL -> Chọn Server -> Chọn Data Import
+  ![alt text](image-2.png)
+- Bước 2: Chọn Import from Self-Contained File -> Chọn vào file "data.sql" ở thư mục ArticleManagement -> tạo schema tên articledb -> start import
   ![alt text](image-1.png)
 
 ### 2. Thiết lập Backend (Spring Boot)
@@ -76,22 +76,21 @@ spring:
 cd article
 ```
 
-#### Bước 3: Chạy ứng dụng
-
-# Chạy ứng dụng
+#### Bước 2: Chạy ứng dụng
 
 mvn spring-boot:run
 
-````
-
+```
 Backend sẽ chạy tại: `http://localhost:8080/article`
+```
 
 ### 3. Thiết lập Frontend (React)
 
 #### Bước 1: Di chuyển vào thư mục frontend
+
 ```cmd
 cd article-management-web
-````
+```
 
 #### Bước 2: Cài đặt dependencies
 
@@ -105,7 +104,9 @@ npm install
 npm start
 ```
 
+```
 Frontend sẽ chạy tại: `http://localhost:3000`
+```
 
 ## Kiểm tra chức năng
 
