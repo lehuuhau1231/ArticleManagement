@@ -4,8 +4,6 @@ Hệ thống quản lý bài viết với Spring Boot backend và React frontend
 
 ## Mô tả dự án
 
-:
-
 - Đăng ký và đăng nhập tài khoản
 - Tạo, đọc, cập nhật và xóa bài viết
 - Xem danh sách bài viết của tất cả người dùng
