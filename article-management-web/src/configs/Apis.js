@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/article/";
+const BASE_URL = "https://articlemanagement-7.onrender.com/";
 
 export const endpoints = {
   login: "auth/token",
